@@ -1,0 +1,137 @@
+[{
+    "layer": "top",
+    "output": "DP-1",
+    "position": "top",
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 20,
+    "modules-left": [
+        "custom/launcher",
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "clock",
+        "tray" 
+    ],
+    "custom/launcher": {
+        "format": "",
+        "on-click": "~/.config/rofi/launcher/launcher.sh"
+    },
+    "wlr/workspaces": {
+        "format": "{name}",
+        "disable-scroll-wraparound": true,
+        "on-click": "activate",
+        //"format-icons": {
+        //    "urgent": "",
+        //    "active": "",
+        //    "default": ""
+        //},
+        "sort-by-number": true
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a, %d %b %Y}",
+        "interval": 1
+    },
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        // "format-alt": "󱄠 {desc}", 
+        "on-click": "pavucontrol"
+    },
+    "tray": {
+      "icon-size": 24,
+      "spacing": 10,
+    }
+},{
+    "layer": "top",
+    "output": "DP-2",
+    "position": "top",
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 20,
+    "modules-left": [
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "network",
+        "clock",
+        "custom/powermenu"
+    ],
+    "custom/launcher": {
+        "format": "",
+        "on-click": "~/.config/rofi/launcher/launcher.sh"
+    },
+    "wlr/workspaces": {
+        "format": "{name}",
+        "disable-scroll-wraparound": true,
+        "on-click": "activate",
+        //"format-icons": {
+        //    "urgent": "",
+        //    "active": "",
+        //    "default": ""
+        //},
+        "sort-by-number": true
+    },
+    "clock": {
+        "format": "{:%a %d %b %H:%M}",
+        "interval": 1
+    },
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        // "format-alt": "󱄠 {desc}", 
+        "on-click": "pavucontrol"
+    },
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}%"
+    },
+    "memory": {
+        "interval": 5,
+        "format": " {used} GiB"
+    },
+    "network": {
+        "interval": 5,
+        "format": "󰈀 {bandwidthTotalBits}"
+    },
+    "custom/powermenu": {
+        "format": "",
+        "on-click": "~/.config/rofi/powermenu/powermenu.sh"
+    }
+},{
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "position": "top",
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 20,
+    "modules-left": [
+        "wlr/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "wlr/workspaces": {
+        "format": "{name}",
+        "disable-scroll-wraparound": true,
+        "on-click": "activate",
+        //"format-icons": {
+        //    "urgent": "",
+        //    "active": "",
+        //    "default": ""
+        //},
+        "sort-by-number": true
+    }
+}]

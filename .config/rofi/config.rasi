@@ -1,0 +1,20 @@
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{icon}  {name}";
+  font: "JetBrainsMono Nerd Font Medium 16";
+  modi: "window,run,drun";
+  show-icons: true;
+}
+
+
+@theme "~/.config/rofi/theme.rasi"
+
+window {
+  width: 30%;
+}
+
+listview {
+  columns: 1;
+  lines: 8;
+}
