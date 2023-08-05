@@ -10,6 +10,7 @@ if [ "$TERM" = "xterm-kitty" ]; then
 elif [ "$TERM" = "linux" ]; then
 #  exec Hyprland
 #  exec startxfce4
+  ~/bin/wmswitcher
 else
   echo "New Terminal"
 fi
