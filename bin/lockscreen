@@ -1,6 +1,8 @@
 #!/bin/sh
 swayidle \
-    timeout 600 'swaylock -f' \
-    timeout 900 'hyprctl dispatch dpms off'\
-      timeout 1200 'systemctl suspend'
-kill %%
+    timeout 1500 'swaylock -f' \
+    timeout 1800 'hyprctl dispatch dpms off'\
+      timeout 3600 'systemctl suspend'
+kill %% & 
+hyprpaper
+
