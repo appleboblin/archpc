@@ -10,8 +10,11 @@ if [ "$TERM" = "xterm-kitty" ]; then
 elif [ "$TERM" = "linux" ]; then
 #  exec Hyprland
 #  exec startxfce4
+  ~/bin/wmswitcher
+elif [ "$TERM" = "xterm-256color" ]; then
+  source ~/.powerlevel10k/powerlevel10k.zsh-theme
 else
-  echo "New Terminal"
+  echo "Please add current terminal to .zshrc!!"
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -19,8 +22,8 @@ fi
 
 export ZDOTDIR=$HOME/.config/zsh
 HISTFILE=~/.zsh_history
-HISTSIZE=2000
-SAVEHIST=2000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt SHARE_HISTORY
 
 # Environment variables set everywhere

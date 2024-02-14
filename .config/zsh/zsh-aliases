@@ -3,10 +3,10 @@
 #alias nvimrc='nvim ~/.config/nvim/'
 
 # Exa 
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -lah'
-alias ls='exa --color=auto'
+alias l='eza'
+alias la='eza -a'
+alias ll='eza -lah'
+alias ls='eza --color=auto'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -22,7 +22,7 @@ alias rm='rm -i'
 alias v='nvim'
 alias m='micro'
 alias wifi='nmtui'
-alias gt='cd ~/github'
+alias gt='cd ~/github/'
 alias zotero='cd ~/application/zotero/ && devour bash zotero'
 alias wally='cd ~/application && ./wally'
 alias wake='cd ~/scripts && ./wake.sh'
